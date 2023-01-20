@@ -339,7 +339,6 @@ public class TorService extends Service {
                         "--CacheDirectory", new File(getCacheDir(), TAG).getAbsolutePath(),
                         "--DataDirectory", getAppTorServiceDataDir(context).getAbsolutePath(),
                         "--ControlSocket", getControlSocket(context).getAbsolutePath(),
-                        "--CookieAuthentication", "0",
                         // can be moved to ControlPort messages
                         "--LogMessageDomains", "1",
                         "--TruncateLogFile", "1"
